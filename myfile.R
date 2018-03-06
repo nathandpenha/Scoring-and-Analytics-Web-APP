@@ -17,8 +17,8 @@ normalMean <- function(samples=10){
 #* @get /name
 name<-function()
 {
-  
-  
+  D<-read.csv("Data/Names.csv",sep = ",")
+  print(D$Names)
   
 }
 
