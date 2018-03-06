@@ -1,0 +1,399 @@
+Overs,Mdns,Runs,Wkts,Econ,Ave,SR,,Opposition,Ground,Start Date,Match No
+10.0,0,32,0,3.20,-,-,,v Kenya,Nairobi (Aga),2 Oct 1996,1123
+10.0,0,43,1,4.30,43.00,60.0,,v Sri Lanka,Nairobi (Gym),4 Oct 1996,1125
+10.0,0,48,3,4.80,16.00,20.0,,v South Africa,Nairobi (Gym),6 Oct 1996,1126
+8.0,0,36,1,4.50,36.00,48.0,,v Zimbabwe,Quetta,30 Oct 1996,1133
+10.0,0,38,0,3.80,-,-,,v Zimbabwe,Lahore,1 Nov 1996,1135
+7.0,0,25,2,3.57,12.50,21.0,,v Zimbabwe,Peshawar,3 Nov 1996,1136
+9.0,0,37,1,4.11,37.00,54.0,,v Sri Lanka,Sharjah,8 Nov 1996,1140
+10.0,0,38,0,3.80,-,-,,v New Zealand,Sharjah,10 Nov 1996,1141
+9.0,0,34,0,3.77,-,-,,v Sri Lanka,Sharjah,12 Nov 1996,1143
+7.0,1,26,0,3.71,-,-,,v New Zealand,Sharjah,13 Nov 1996,1144
+2.5,0,14,2,4.94,7.00,8.5,,v New Zealand,Sharjah,15 Nov 1996,1145
+9.0,0,43,0,4.77,-,-,,v New Zealand,Gujranwala,4 Dec 1996,1146
+7.0,0,40,2,5.71,20.00,21.0,,v New Zealand,Sialkot,6 Dec 1996,1148
+8.1,1,39,1,4.77,39.00,49.0,,v New Zealand,Karachi,8 Dec 1996,1150
+10.0,0,49,1,4.90,49.00,60.0,,v Australia,Adelaide,15 Dec 1996,1152
+8.1,1,31,2,3.79,15.50,24.5,,v West Indies,Adelaide,17 Dec 1996,1154
+9.0,0,32,1,3.55,32.00,54.0,,v Australia,Sydney,1 Jan 1997,1155
+6.1,0,39,0,6.32,-,-,,v West Indies,Brisbane,3 Jan 1997,1157
+1.3,0,1,2,0.66,0.50,4.5,,v Australia,Hobart,7 Jan 1997,1160
+6.0,0,52,0,8.66,-,-,,v West Indies,Perth,10 Jan 1997,1161
+9.0,0,48,1,5.33,48.00,54.0,,v Australia,Melbourne,16 Jan 1997,1164
+10.0,0,33,3,3.30,11.00,20.0,,v West Indies,Sydney,18 Jan 1997,1165
+7.0,0,21,1,3.00,21.00,42.0,,v West Indies,Melbourne,20 Jan 1997,1166
+9.0,1,39,0,4.33,-,-,,v Sri Lanka,Sharjah,4 Apr 1997,1190
+6.4,1,11,1,1.65,11.00,40.0,,v Zimbabwe,Sharjah,6 Apr 1997,1192
+10.0,0,30,1,3.00,30.00,60.0,,v Sri Lanka,Sharjah,7 Apr 1997,1193
+9.0,1,25,0,2.77,-,-,,v Zimbabwe,Sharjah,9 Apr 1997,1196
+5.0,0,24,0,4.80,-,-,,v Sri Lanka,Sharjah,11 Apr 1997,1198
+10.0,0,49,1,4.90,49.00,60.0,,v New Zealand,Mohali,9 May 1997,1204
+8.0,0,58,0,7.25,-,-,,v Sri Lanka,Gwalior,12 May 1997,1205
+10.0,0,56,0,5.60,-,-,,v India,Chennai,21 May 1997,1209
+10.0,0,63,0,6.30,-,-,,v Sri Lanka,Mohali,24 May 1997,1212
+5.0,0,40,1,8.00,40.00,30.0,,v Sri Lanka,Kolkata,27 May 1997,1214
+4.0,0,25,1,6.25,25.00,24.0,,v Sri Lanka,Colombo (RPS),14 Jul 1997,1216
+9.0,0,36,0,4.00,-,-,,v Bangladesh,Colombo (RPS),16 Jul 1997,1217
+-,-,-,-,-,-,-,,v India,Colombo (SSC),20 Jul 1997,1219
+10.0,0,43,1,4.30,43.00,60.0,,v India,Toronto,13 Sep 1997,1227
+1.0,0,3,0,3.00,-,-,,v India,Toronto,14 Sep 1997,1228
+-,-,-,-,-,-,-,,v India,Toronto,17 Sep 1997,1229
+5.0,0,20,0,4.00,-,-,,v India,Toronto,18 Sep 1997,1230
+-,-,-,-,-,-,-,,v India,Toronto,20 Sep 1997,1231
+9.0,0,48,0,5.33,-,-,,v India,Toronto,21 Sep 1997,1232
+10.0,0,38,1,3.80,38.00,60.0,,v India,Hyderabad (Sind),28 Sep 1997,1233
+9.0,0,48,1,5.33,48.00,54.0,,v India,Karachi,30 Sep 1997,1234
+5.0,0,26,0,5.20,-,-,,v India,Lahore,2 Oct 1997,1236
+10.0,0,56,0,5.60,-,-,,v South Africa,Lahore,2 Nov 1997,1248
+8.0,0,41,0,5.12,-,-,,v West Indies,Lahore,4 Nov 1997,1250
+5.0,0,42,0,8.40,-,-,,v Sri Lanka,Lahore,5 Nov 1997,1251
+10.0,0,57,1,5.70,57.00,60.0,,v West Indies,Sharjah,12 Dec 1997,1260
+-,-,-,-,-,-,-,,v India,Sharjah,14 Dec 1997,1262
+7.0,0,26,0,3.71,-,-,,v England,Sharjah,15 Dec 1997,1263
+8.0,0,38,0,4.75,-,-,,v India,Dhaka,11 Jan 1998,1273
+8.0,1,25,2,3.12,12.50,24.0,,v Bangladesh,Dhaka,12 Jan 1998,1274
+9.0,0,49,1,5.44,49.00,54.0,,v India,Dhaka,14 Jan 1998,1276
+10.0,2,21,0,2.10,-,-,,v India,Dhaka,16 Jan 1998,1277
+6.4,0,56,1,8.40,56.00,40.0,,v India,Dhaka,18 Jan 1998,1279
+10.0,1,45,2,4.50,22.50,30.0,,v Zimbabwe,Harare,28 Mar 1998,1297
+10.0,0,63,0,6.30,-,-,,v Zimbabwe,Harare,29 Mar 1998,1298
+9.4,0,52,0,5.37,-,-,,v South Africa,Durban,3 Apr 1998,1303
+-,-,-,-,-,-,-,,v Sri Lanka,Paarl,9 Apr 1998,1312
+2.0,0,18,0,9.00,-,-,,v Sri Lanka,Benoni,15 Apr 1998,1317
+6.0,2,18,0,3.00,-,-,,v India,Toronto,12 Sep 1998,1349
+8.0,0,27,0,3.37,-,-,,v India,Toronto,13 Sep 1998,1350
+10.0,0,34,1,3.40,34.00,60.0,,v India,Toronto,16 Sep 1998,1351
+6.0,0,34,0,5.66,-,-,,v India,Toronto,19 Sep 1998,1352
+8.0,0,43,1,5.37,43.00,48.0,,v India,Toronto,20 Sep 1998,1353
+9.0,0,48,0,5.33,-,-,,v West Indies,Dhaka,29 Oct 1998,1361
+9.0,0,63,0,7.00,-,-,,v Australia,Karachi,6 Nov 1998,1365
+3.0,0,24,0,8.00,-,-,,v Australia,Lahore,10 Nov 1998,1371
+9.0,0,45,3,5.00,15.00,18.0,,v Zimbabwe,Gujranwala,20 Nov 1998,1375
+6.0,0,33,1,5.50,33.00,36.0,,v Zimbabwe,Sheikhupura,22 Nov 1998,1376
+5.0,0,22,0,4.40,-,-,,v Bangladesh,Dhaka,16 Mar 1999,1410
+8.0,0,41,1,5.12,41.00,48.0,,v Sri Lanka,Jamshedpur,19 Mar 1999,1411
+6.1,0,28,2,4.54,14.00,18.5,,v India,Jaipur,24 Mar 1999,1417
+3.0,0,18,0,6.00,-,-,,v Sri Lanka,Visakhapatnam,27 Mar 1999,1423
+-,-,-,-,-,-,-,,v India,Mohali,1 Apr 1999,1427
+3.0,0,14,0,4.66,-,-,,v India,Bengaluru,4 Apr 1999,1428
+9.0,0,53,3,5.88,17.66,18.0,,v England,Sharjah,7 Apr 1999,1429
+8.0,0,35,2,4.37,17.50,24.0,,v India,Sharjah,8 Apr 1999,1430
+4.0,0,20,0,5.00,-,-,,v England,Sharjah,12 Apr 1999,1434
+8.0,0,32,0,4.00,-,-,,v India,Sharjah,13 Apr 1999,1435
+2.0,0,8,0,4.00,-,-,,v India,Sharjah,16 Apr 1999,1437
+-,-,-,-,-,-,-,,v West Indies,Bristol,16 May 1999,1447
+2.0,0,16,0,8.00,-,-,,v Scotland,Chester-le-Street,20 May 1999,1453
+6.0,1,26,0,4.33,-,-,,v New Zealand,Derby,28 May 1999,1466
+5.0,0,26,1,5.20,26.00,30.0,,v Bangladesh,Northampton,31 May 1999,1471
+-,-,-,-,-,-,-,,v India,Manchester,8 Jun 1999,1476
+4.0,0,20,0,5.00,-,-,,v Zimbabwe,The Oval,11 Jun 1999,1479
+5.0,0,27,0,5.40,-,-,,v New Zealand,Manchester,16 Jun 1999,1482
+-,-,-,-,-,-,-,,v Australia,Lord's,20 Jun 1999,1484
+3.0,1,6,2,2.00,3.00,9.0,,v Sri Lanka,Sharjah,18 Oct 1999,1516
+-,-,-,-,-,-,-,,v West Indies,Sharjah,19 Oct 1999,1517
+-,-,-,-,-,-,-,,v Sri Lanka,Sharjah,22 Oct 1999,1519
+6.0,0,26,0,4.33,-,-,,v India,Brisbane,10 Jan 2000,1537
+7.0,0,33,0,4.71,-,-,,v India,Hobart,21 Jan 2000,1543
+9.0,0,45,2,5.00,22.50,27.0,,v Australia,Melbourne,23 Jan 2000,1545
+6.0,0,32,1,5.33,32.00,36.0,,v India,Adelaide,25 Jan 2000,1547
+10.0,0,42,3,4.20,14.00,20.0,,v India,Perth,28 Jan 2000,1550
+8.0,0,29,1,3.62,29.00,48.0,,v Australia,Melbourne,2 Feb 2000,1554
+10.0,0,54,1,5.40,54.00,60.0,,v Australia,Sydney,4 Feb 2000,1556
+5.0,1,15,0,3.00,-,-,,v India,Sharjah,23 Mar 2000,1578
+3.0,0,3,1,1.00,3.00,18.0,,v South Africa,Sharjah,24 Mar 2000,1579
+8.0,0,21,0,2.62,-,-,,v India,Sharjah,26 Mar 2000,1580
+2.0,0,10,0,5.00,-,-,,v South Africa,Sharjah,28 Mar 2000,1582
+4.0,0,30,0,7.50,-,-,,v South Africa,Sharjah,31 Mar 2000,1583
+6.0,0,35,2,5.83,17.50,18.0,,v Zimbabwe,St John's,5 Apr 2000,1586
+1.0,0,4,0,4.00,-,-,,v West Indies,Kingstown,12 Apr 2000,1588
+2.0,0,13,0,6.50,-,-,,v Zimbabwe,St George's,15 Apr 2000,1590
+3.3,0,16,3,4.57,5.33,7.0,,v West Indies,Bridgetown,19 Apr 2000,1593
+5.0,0,35,1,7.00,35.00,30.0,,v West Indies,Port of Spain,22 Apr 2000,1594
+-,-,-,-,-,-,-,,v West Indies,Port of Spain,23 Apr 2000,1595
+4.0,2,11,0,2.75,-,-,,v Bangladesh,Dhaka,2 Jun 2000,1599
+9.0,0,55,0,6.11,-,-,,v India,Dhaka,3 Jun 2000,1600
+3.0,0,6,1,2.00,6.00,18.0,,v Sri Lanka,Dhaka,5 Jun 2000,1601
+2.0,0,20,0,10.00,-,-,,v Sri Lanka,Dhaka,7 Jun 2000,1602
+3.0,0,11,0,3.66,-,-,,v Sri Lanka,Galle,5 Jul 2000,1603
+1.0,0,10,0,10.00,-,-,,v New Zealand,Singapore,20 Aug 2000,1623
+-,-,-,-,-,-,-,,v South Africa,Singapore,23 Aug 2000,1624
+10.0,1,40,5,4.00,8.00,12.0,,v England,Lahore,27 Oct 2000,1649
+6.5,1,21,1,3.07,21.00,41.0,,v England,Rawalpindi,30 Oct 2000,1653
+3.0,0,12,0,4.00,-,-,,v New Zealand,Auckland,17 Feb 2001,1689
+-,-,-,-,-,-,-,,v New Zealand,Napier,20 Feb 2001,1690
+2.0,0,15,0,7.50,-,-,,v New Zealand,Dunedin,28 Feb 2001,1693
+7.0,0,33,2,4.71,16.50,21.0,,v Sri Lanka,Sharjah,8 Apr 2001,1704
+10.0,0,49,2,4.90,24.50,30.0,,v New Zealand,Sharjah,12 Apr 2001,1707
+10.0,0,44,3,4.40,14.66,20.0,,v Sri Lanka,Sharjah,13 Apr 2001,1708
+7.0,0,43,0,6.14,-,-,,v Sri Lanka,Sharjah,20 Apr 2001,1711
+7.2,2,15,3,2.04,5.00,14.6,,v England,Birmingham,7 Jun 2001,1719
+8.0,0,43,0,5.37,-,-,,v Australia,Cardiff,9 Jun 2001,1720
+7.0,0,35,1,5.00,35.00,42.0,,v England,Lord's,12 Jun 2001,1722
+4.0,1,19,1,4.75,19.00,24.0,,v England,Leeds,17 Jun 2001,1724
+3.0,1,16,0,5.33,-,-,,v Sri Lanka,Sharjah,27 Oct 2001,1767
+8.0,1,21,2,2.62,10.50,24.0,,v Zimbabwe,Sharjah,28 Oct 2001,1768
+5.0,0,28,0,5.60,-,-,,v Zimbabwe,Sharjah,31 Oct 2001,1770
+10.0,0,46,1,4.60,46.00,60.0,,v Sri Lanka,Sharjah,2 Nov 2001,1771
+10.0,2,45,2,4.50,22.50,30.0,,v Sri Lanka,Sharjah,4 Nov 2001,1772
+7.0,0,28,0,4.00,-,-,,v Bangladesh,Chittagong,22 Jan 2002,1790
+7.0,3,11,3,1.57,3.66,14.0,,v Bangladesh,Dhaka,24 Jan 2002,1793
+10.0,1,38,2,3.80,19.00,30.0,,v Bangladesh,Dhaka,25 Jan 2002,1794
+7.0,1,25,1,3.57,25.00,42.0,,v West Indies,Sharjah,14 Feb 2002,1807
+3.0,0,13,0,4.33,-,-,,v West Indies,Sharjah,15 Feb 2002,1808
+8.0,1,35,0,4.37,-,-,,v West Indies,Sharjah,17 Feb 2002,1810
+2.0,0,17,0,8.50,-,-,,v Sri Lanka,Sharjah,8 Apr 2002,1825
+3.0,0,23,0,7.66,-,-,,v New Zealand,Sharjah,11 Apr 2002,1828
+6.0,0,28,1,4.66,28.00,36.0,,v Sri Lanka,Sharjah,12 Apr 2002,1829
+4.0,0,19,0,4.75,-,-,,v New Zealand,Sharjah,15 Apr 2002,1831
+-,-,-,-,-,-,-,,v Sri Lanka,Sharjah,17 Apr 2002,1832
+-,-,-,-,-,-,-,,v New Zealand,Karachi,21 Apr 2002,1833
+5.0,0,23,0,4.60,-,-,,v New Zealand,Rawalpindi,24 Apr 2002,1834
+10.0,0,37,1,3.70,37.00,60.0,,v New Zealand,Lahore,27 Apr 2002,1835
+5.5,0,20,1,3.42,20.00,35.0,,v Australia,Melbourne (Docklands),12 Jun 2002,1842
+9.4,1,28,3,2.89,9.33,19.3,,v Australia,Melbourne (Docklands),15 Jun 2002,1844
+10.0,2,30,2,3.00,15.00,30.0,,v Australia,Brisbane,19 Jun 2002,1846
+10.0,0,54,1,5.40,54.00,60.0,,v South Africa,Tangier,12 Aug 2002,1860
+10.0,1,36,1,3.60,36.00,60.0,,v Sri Lanka,Tangier,14 Aug 2002,1861
+10.0,0,48,0,4.80,-,-,,v Sri Lanka,Tangier,17 Aug 2002,1863
+10.0,0,28,0,2.80,-,-,,v South Africa,Tangier,18 Aug 2002,1864
+-,-,-,-,-,-,-,,v Kenya,Nairobi (Gym),29 Aug 2002,1867
+10.0,0,56,2,5.60,28.00,30.0,,v Australia,Nairobi (Gym),30 Aug 2002,1868
+10.0,1,33,2,3.30,16.50,30.0,,v Kenya,Nairobi (Gym),1 Sep 2002,1869
+1.0,0,6,0,6.00,-,-,,v Australia,Nairobi (Gym),4 Sep 2002,1871
+-,-,-,-,-,-,-,,v Australia,Nairobi (Gym),7 Sep 2002,1873
+7.1,0,39,0,5.44,-,-,,v Sri Lanka,Colombo (RPS),12 Sep 2002,1874
+10.0,3,18,3,1.80,6.00,20.0,,v Netherlands,Colombo (SSC),21 Sep 2002,1883
+7.0,0,50,0,7.14,-,-,,v Zimbabwe,Bulawayo,23 Nov 2002,1899
+10.0,1,43,1,4.30,43.00,60.0,,v Zimbabwe,Bulawayo,24 Nov 2002,1901
+10.0,1,51,1,5.10,51.00,60.0,,v Zimbabwe,Harare,27 Nov 2002,1902
+10.0,0,41,1,4.10,41.00,60.0,,v Zimbabwe,Harare,30 Nov 2002,1906
+10.0,0,45,3,4.50,15.00,20.0,,v Zimbabwe,Harare,1 Dec 2002,1907
+7.0,0,35,3,5.00,11.66,14.0,,v South Africa,Port Elizabeth,11 Dec 2002,1916
+10.0,0,24,1,2.40,24.00,60.0,,v South Africa,East London,13 Dec 2002,1918
+10.0,0,44,0,4.40,-,-,,v South Africa,Paarl,16 Dec 2002,1921
+10.0,0,69,0,6.90,-,-,,v South Africa,Cape Town,18 Dec 2002,1923
+9.3,0,63,0,6.63,-,-,,v Australia,Johannesburg,11 Feb 2003,1945
+8.0,0,36,2,4.50,18.00,24.0,,v England,Cape Town,22 Feb 2003,1962
+9.0,0,45,1,5.00,45.00,54.0,,v India,Centurion,1 Mar 2003,1975
+8.0,0,57,2,7.12,28.50,24.0,,v India,Rawalpindi,16 Mar 2004,2114
+-,-,-,-,-,-,-,,v India,Peshawar,19 Mar 2004,2115
+5.0,0,30,0,6.00,-,-,,v India,Lahore,21 Mar 2004,2116
+6.0,0,20,4,3.33,5.00,9.0,,v India,Amstelveen,21 Aug 2004,2157
+6.0,0,20,0,3.33,-,-,,v Australia,Amstelveen,28 Aug 2004,2162
+9.0,0,40,1,4.44,40.00,54.0,,v Australia,Lord's,4 Sep 2004,2166
+6.0,1,11,5,1.83,2.20,7.2,,v Kenya,Birmingham,14 Sep 2004,2174
+2.0,0,23,0,11.50,-,-,,v India,Birmingham,19 Sep 2004,2179
+-,-,-,-,-,-,-,,v West Indies,Southampton,22 Sep 2004,2181
+6.3,0,18,3,2.76,6.00,13.0,,v Zimbabwe,Multan,30 Sep 2004,2183
+10.0,0,39,1,3.90,39.00,60.0,,v Zimbabwe,Peshawar,3 Oct 2004,2184
+10.0,0,42,1,4.20,42.00,60.0,,v Sri Lanka,Karachi,6 Oct 2004,2185
+8.0,0,57,1,7.12,57.00,48.0,,v Sri Lanka,Lahore,14 Oct 2004,2187
+10.0,0,60,2,6.00,30.00,30.0,,v Sri Lanka,Lahore,16 Oct 2004,2188
+10.0,0,29,2,2.90,14.50,30.0,,v India,Kolkata,13 Nov 2004,2192
+9.0,0,43,1,4.77,43.00,54.0,,v Australia,Hobart,16 Jan 2005,2205
+10.0,0,39,0,3.90,-,-,,v West Indies,Brisbane,19 Jan 2005,2206
+8.0,0,22,0,2.75,-,-,,v Australia,Sydney,23 Jan 2005,2209
+10.0,0,64,1,6.40,64.00,60.0,,v West Indies,Adelaide,28 Jan 2005,2213
+10.0,0,45,2,4.50,22.50,30.0,,v Australia,Perth,30 Jan 2005,2215
+10.0,0,47,2,4.70,23.50,30.0,,v West Indies,Perth,1 Feb 2005,2218
+10.0,0,50,2,5.00,25.00,30.0,,v Australia,Melbourne,4 Feb 2005,2220
+10.0,0,38,2,3.80,19.00,30.0,,v Australia,Sydney,6 Feb 2005,2222
+10.0,0,50,0,5.00,-,-,,v India,Kochi,2 Apr 2005,2235
+9.0,0,82,0,9.11,-,-,,v India,Visakhapatnam,5 Apr 2005,2236
+2.0,0,20,0,10.00,-,-,,v India,Jamshedpur,9 Apr 2005,2237
+9.0,0,50,0,5.55,-,-,,v India,Ahmedabad,12 Apr 2005,2238
+6.0,0,33,0,5.50,-,-,,v India,Kanpur,15 Apr 2005,2239
+4.0,0,10,2,2.50,5.00,12.0,,v India,Delhi,17 Apr 2005,2240
+10.0,0,28,2,2.80,14.00,30.0,,v West Indies,Kingstown,18 May 2005,2246
+10.0,1,38,4,3.80,9.50,15.0,,v West Indies,Gros Islet,21 May 2005,2247
+6.0,0,35,0,5.83,-,-,,v West Indies,Gros Islet,22 May 2005,2248
+2.0,0,13,1,6.50,13.00,12.0,,v Africa XI,Centurion,17 Aug 2005,2269
+7.0,1,42,0,6.00,-,-,,v Africa XI,Durban,20 Aug 2005,2270
+2.5,0,5,1,1.76,5.00,17.0,,v Africa XI,Durban,21 Aug 2005,2271
+-,-,-,-,-,-,-,,v Australia,Melbourne (Docklands),5 Oct 2005,2282
+-,-,-,-,-,-,-,,v Australia,Melbourne (Docklands),9 Oct 2005,2284
+10.0,0,42,2,4.20,21.00,30.0,,v England,Karachi,15 Dec 2005,2306
+7.0,0,34,3,4.85,11.33,14.0,,v England,Rawalpindi,19 Dec 2005,2307
+10.0,0,37,1,3.70,37.00,60.0,,v England,Rawalpindi,21 Dec 2005,2308
+10.0,0,68,0,6.80,-,-,,v India,Peshawar,6 Feb 2006,2324
+2.0,0,17,0,8.50,-,-,,v India,Rawalpindi,11 Feb 2006,2327
+3.0,0,24,0,8.00,-,-,,v India,Lahore,13 Feb 2006,2329
+-,-,-,-,-,-,-,,v Sri Lanka,Colombo (RPS),17 Mar 2006,2351
+10.0,0,28,2,2.80,14.00,30.0,,v Sri Lanka,Colombo (RPS),19 Mar 2006,2352
+10.0,0,37,3,3.70,12.33,20.0,,v Sri Lanka,Colombo (SSC),22 Mar 2006,2354
+10.0,0,42,1,4.20,42.00,60.0,,v India,Abu Dhabi,18 Apr 2006,2363
+10.0,0,39,1,3.90,39.00,60.0,,v India,Abu Dhabi,19 Apr 2006,2364
+10.0,0,42,1,4.20,42.00,60.0,,v Scotland,Edinburgh,27 Jun 2006,2387
+8.2,0,38,2,4.56,19.00,25.0,,v England,Cardiff,30 Aug 2006,2408
+5.0,0,27,1,5.40,27.00,30.0,,v England,Lord's,2 Sep 2006,2409
+6.0,0,26,0,4.33,-,-,,v England,Southampton,5 Sep 2006,2410
+5.0,0,25,0,5.00,-,-,,v England,Nottingham,8 Sep 2006,2411
+5.0,1,14,2,2.80,7.00,15.0,,v England,Birmingham,10 Sep 2006,2412
+10.0,0,47,1,4.70,47.00,60.0,,v Sri Lanka,Jaipur,17 Oct 2006,2431
+10.0,0,49,0,4.90,-,-,,v New Zealand,Mohali,25 Oct 2006,2436
+6.0,0,26,0,4.33,-,-,,v South Africa,Mohali,27 Oct 2006,2438
+2.0,0,13,0,6.50,-,-,,v West Indies,Multan,13 Dec 2006,2464
+10.0,0,42,2,4.20,21.00,30.0,,v South Africa,Centurion,4 Feb 2007,2506
+9.0,1,25,3,2.77,8.33,18.0,,v South Africa,Durban,7 Feb 2007,2513
+-,-,-,-,-,-,-,,v South Africa,Port Elizabeth,9 Feb 2007,2517
+4.0,0,20,3,5.00,6.66,8.0,,v Zimbabwe,Kingston,21 Mar 2007,2547
+10.0,0,43,0,4.30,-,-,,v Sri Lanka,Abu Dhabi,18 May 2007,2584
+10.0,0,37,3,3.70,12.33,20.0,,v Sri Lanka,Abu Dhabi,20 May 2007,2585
+10.0,0,48,1,4.80,48.00,60.0,,v South Africa,Lahore,18 Oct 2007,2633
+10.0,0,41,1,4.10,41.00,60.0,,v South Africa,Lahore,20 Oct 2007,2635
+10.0,0,37,3,3.70,12.33,20.0,,v South Africa,Faisalabad,23 Oct 2007,2637
+9.0,0,43,1,4.77,43.00,54.0,,v South Africa,Multan,26 Oct 2007,2639
+10.0,0,44,0,4.40,-,-,,v South Africa,Lahore,29 Oct 2007,2642
+10.0,0,34,1,3.40,34.00,60.0,,v India,Guwahati,5 Nov 2007,2643
+10.0,0,65,1,6.50,65.00,60.0,,v India,Mohali,8 Nov 2007,2644
+7.0,0,57,0,8.14,-,-,,v India,Kanpur,11 Nov 2007,2645
+10.0,0,67,0,6.70,-,-,,v India,Gwalior,15 Nov 2007,2646
+10.0,0,33,2,3.30,16.50,30.0,,v Zimbabwe,Karachi,21 Jan 2008,2662
+10.0,1,39,1,3.90,39.00,60.0,,v Zimbabwe,Hyderabad (Sind),24 Jan 2008,2663
+10.0,0,60,1,6.00,60.00,60.0,,v Zimbabwe,Multan,27 Jan 2008,2665
+10.0,0,57,1,5.70,57.00,60.0,,v Zimbabwe,Faisalabad,30 Jan 2008,2667
+7.5,0,41,3,5.23,13.66,15.6,,v Bangladesh,Lahore,8 Apr 2008,2696
+10.0,0,33,3,3.30,11.00,20.0,,v Bangladesh,Faisalabad,11 Apr 2008,2698
+10.0,0,48,2,4.80,24.00,30.0,,v Bangladesh,Lahore,13 Apr 2008,2700
+10.0,0,34,1,3.40,34.00,60.0,,v Bangladesh,Multan,16 Apr 2008,2702
+10.0,0,40,3,4.00,13.33,20.0,,v Bangladesh,Karachi,19 Apr 2008,2703
+8.0,1,19,3,2.37,6.33,16.0,,v Bangladesh,Dhaka,8 Jun 2008,2704
+10.0,0,52,2,5.20,26.00,30.0,,v India,Dhaka,10 Jun 2008,2705
+9.2,0,56,2,6.00,28.00,28.0,,v India,Dhaka,14 Jun 2008,2707
+8.0,0,31,2,3.87,15.50,24.0,,v Hong Kong,Karachi,24 Jun 2008,2712
+10.0,0,64,1,6.40,64.00,60.0,,v India,Karachi,26 Jun 2008,2717
+10.0,0,54,0,5.40,-,-,,v Sri Lanka,Karachi,29 Jun 2008,2723
+10.0,0,52,0,5.20,-,-,,v India,Karachi,2 Jul 2008,2730
+10.0,0,45,1,4.50,45.00,60.0,,v West Indies,Abu Dhabi,12 Nov 2008,2773
+10.0,0,42,1,4.20,42.00,60.0,,v West Indies,Abu Dhabi,14 Nov 2008,2775
+9.0,0,51,1,5.66,51.00,54.0,,v West Indies,Abu Dhabi,16 Nov 2008,2776
+10.0,1,47,1,4.70,47.00,60.0,,v Sri Lanka,Karachi,20 Jan 2009,2798
+10.0,0,42,0,4.20,-,-,,v Sri Lanka,Karachi,21 Jan 2009,2800
+10.0,0,60,0,6.00,-,-,,v Sri Lanka,Lahore,24 Jan 2009,2803
+10.0,0,38,6,3.80,6.33,10.0,,v Australia,Dubai (DSC),22 Apr 2009,2845
+10.0,0,38,2,3.80,19.00,30.0,,v Australia,Dubai (DSC),24 Apr 2009,2846
+10.0,2,31,2,3.10,15.50,30.0,,v Australia,Abu Dhabi,27 Apr 2009,2847
+7.0,0,31,0,4.42,-,-,,v Australia,Abu Dhabi,1 May 2009,2848
+10.0,0,36,0,3.60,-,-,,v Australia,Abu Dhabi,3 May 2009,2849
+10.0,1,50,1,5.00,50.00,60.0,,v Sri Lanka,Dambulla,30 Jul 2009,2864
+8.0,0,39,1,4.87,39.00,48.0,,v Sri Lanka,Dambulla,1 Aug 2009,2866
+6.0,0,45,0,7.50,-,-,,v Sri Lanka,Dambulla,3 Aug 2009,2867
+9.0,0,40,2,4.44,20.00,27.0,,v Sri Lanka,Colombo (RPS),7 Aug 2009,2868
+3.2,0,16,2,4.80,8.00,10.0,,v Sri Lanka,Colombo (RPS),9 Aug 2009,2870
+8.3,0,39,1,4.58,39.00,51.0,,v West Indies,Johannesburg,23 Sep 2009,2894
+10.0,0,39,2,3.90,19.50,30.0,,v India,Centurion,26 Sep 2009,2898
+10.0,0,47,1,4.70,47.00,60.0,,v Australia,Centurion,30 Sep 2009,2903
+10.0,0,41,1,4.10,41.00,60.0,,v New Zealand,Johannesburg,3 Oct 2009,2906
+10.0,0,46,2,4.60,23.00,30.0,,v New Zealand,Abu Dhabi,3 Nov 2009,2921
+10.0,0,49,2,4.90,24.50,30.0,,v New Zealand,Abu Dhabi,6 Nov 2009,2924
+10.0,0,33,1,3.30,33.00,60.0,,v New Zealand,Abu Dhabi,9 Nov 2009,2927
+10.0,0,66,1,6.60,66.00,60.0,,v Australia,Brisbane,22 Jan 2010,2944
+10.0,0,35,2,3.50,17.50,30.0,,v Australia,Sydney,24 Jan 2010,2945
+10.0,0,55,0,5.50,-,-,,v Australia,Adelaide,26 Jan 2010,2946
+10.0,1,44,1,4.40,44.00,60.0,,v Australia,Perth,29 Jan 2010,2947
+10.0,0,31,2,3.10,15.50,30.0,,v Australia,Perth,31 Jan 2010,2948
+10.0,0,43,1,4.30,43.00,60.0,,v Sri Lanka,Dambulla,15 Jun 2010,2991
+10.0,0,41,1,4.10,41.00,60.0,,v India,Dambulla,19 Jun 2010,2996
+10.0,0,54,1,5.40,54.00,60.0,,v Bangladesh,Dambulla,21 Jun 2010,2998
+7.3,0,52,1,6.93,52.00,45.0,,v England,Chester-le-Street,10 Sep 2010,3043
+9.0,0,59,1,6.55,59.00,54.0,,v England,Leeds,12 Sep 2010,3044
+9.0,0,47,0,5.22,-,-,,v England,The Oval,17 Sep 2010,3045
+7.0,0,31,1,4.42,31.00,42.0,,v England,Lord's,20 Sep 2010,3046
+10.0,0,40,1,4.00,40.00,60.0,,v England,Southampton,22 Sep 2010,3047
+10.0,0,36,0,3.60,-,-,,v South Africa,Abu Dhabi,29 Oct 2010,3062
+10.0,0,59,2,5.90,29.50,30.0,,v South Africa,Abu Dhabi,31 Oct 2010,3063
+10.0,0,53,2,5.30,26.50,30.0,,v South Africa,Dubai (DSC),2 Nov 2010,3064
+10.0,0,51,0,5.10,-,-,,v South Africa,Dubai (DSC),5 Nov 2010,3067
+10.0,0,59,2,5.90,29.50,30.0,,v South Africa,Dubai (DSC),8 Nov 2010,3069
+1.2,0,7,0,5.25,-,-,,v New Zealand,Wellington,22 Jan 2011,3085
+-,-,-,-,-,-,-,,v New Zealand,Queenstown,26 Jan 2011,3088
+10.0,0,45,1,4.50,45.00,60.0,,v New Zealand,Christchurch,29 Jan 2011,3090
+10.0,0,42,1,4.20,42.00,60.0,,v New Zealand,Napier,1 Feb 2011,3093
+10.0,0,55,2,5.50,27.50,30.0,,v New Zealand,Hamilton,3 Feb 2011,3095
+10.0,0,51,0,5.10,-,-,,v New Zealand,Auckland,5 Feb 2011,3097
+8.0,3,16,5,2.00,3.20,9.6,,v Kenya,Hambantota,23 Feb 2011,3105
+10.0,0,34,4,3.40,8.50,15.0,,v Sri Lanka,Colombo (RPS),26 Feb 2011,3109
+10.0,0,23,5,2.30,4.60,12.0,,v Canada,Colombo (RPS),3 Mar 2011,3116
+10.0,0,55,1,5.50,55.00,60.0,,v New Zealand,Pallekele,8 Mar 2011,3123
+8.0,0,33,1,4.12,33.00,48.0,,v Zimbabwe,Pallekele,14 Mar 2011,3132
+9.0,0,34,1,3.77,34.00,54.0,,v Australia,Colombo (RPS),19 Mar 2011,3139
+9.3,1,30,4,3.15,7.50,14.2,,v West Indies,Dhaka,23 Mar 2011,3142
+10.0,0,45,0,4.50,-,-,,v India,Mohali,30 Mar 2011,3147
+10.0,1,40,0,4.00,-,-,,v West Indies,Gros Islet,23 Apr 2011,3152
+10.0,1,41,2,4.10,20.50,30.0,,v West Indies,Gros Islet,25 Apr 2011,3153
+9.0,2,25,0,2.77,-,-,,v West Indies,Bridgetown,28 Apr 2011,3154
+6.5,0,32,0,4.68,-,-,,v West Indies,Bridgetown,2 May 2011,3155
+6.0,0,31,0,5.16,-,-,,v West Indies,Providence,5 May 2011,3156
+9.3,0,27,3,2.84,9.00,19.0,,v Sri Lanka,Dubai (DSC),11 Nov 2011,3212
+10.0,1,35,2,3.50,17.50,30.0,,v Sri Lanka,Dubai (DSC),14 Nov 2011,3213
+10.0,0,42,2,4.20,21.00,30.0,,v Sri Lanka,Dubai (DSC),18 Nov 2011,3214
+9.2,0,35,5,3.75,7.00,11.2,,v Sri Lanka,Sharjah,20 Nov 2011,3215
+10.0,0,60,1,6.00,60.00,60.0,,v Sri Lanka,Abu Dhabi,23 Nov 2011,3216
+6.3,0,23,5,3.53,4.60,7.8,,v Bangladesh,Dhaka,1 Dec 2011,3218
+7.0,0,49,0,7.00,-,-,,v Bangladesh,Dhaka,3 Dec 2011,3220
+4.0,0,27,0,6.75,-,-,,v Bangladesh,Chittagong,6 Dec 2011,3222
+10.0,0,36,5,3.60,7.20,12.0,,v Afghanistan,Sharjah,10 Feb 2012,3236
+10.0,0,55,2,5.50,27.50,30.0,,v England,Abu Dhabi,13 Feb 2012,3238
+10.0,1,38,1,3.80,38.00,60.0,,v England,Abu Dhabi,15 Feb 2012,3240
+8.0,0,52,0,6.50,-,-,,v England,Dubai (DSC),18 Feb 2012,3243
+10.0,0,54,0,5.40,-,-,,v England,Dubai (DSC),21 Feb 2012,3247
+10.0,0,49,2,4.90,24.50,30.0,,v Bangladesh,Dhaka,11 Mar 2012,3258
+6.0,0,32,0,5.33,-,-,,v Sri Lanka,Dhaka,15 Mar 2012,3260
+9.0,0,58,0,6.44,-,-,,v India,Dhaka,18 Mar 2012,3263
+10.0,1,28,1,2.80,28.00,60.0,,v Bangladesh,Dhaka,22 Mar 2012,3267
+4.0,2,12,0,3.00,-,-,,v Sri Lanka,Pallekele,7 Jun 2012,3272
+10.0,0,50,1,5.00,50.00,60.0,,v Sri Lanka,Pallekele,9 Jun 2012,3273
+-,-,-,-,-,-,-,,v Sri Lanka,Colombo (RPS),13 Jun 2012,3274
+10.0,0,36,0,3.60,-,-,,v Sri Lanka,Colombo (RPS),16 Jun 2012,3275
+10.0,0,48,2,4.80,24.00,30.0,,v Sri Lanka,Colombo (RPS),18 Jun 2012,3277
+10.0,0,37,1,3.70,37.00,60.0,,v Australia,Sharjah,28 Aug 2012,3299
+10.0,0,62,0,6.20,-,-,,v Australia,Sharjah,3 Sep 2012,3303
+8.0,0,60,0,7.50,-,-,,v South Africa,Bloemfontein,10 Mar 2013,3343
+8.0,0,24,0,3.00,-,-,,v South Africa,Centurion,15 Mar 2013,3346
+7.0,0,55,0,7.85,-,-,,v South Africa,Johannesburg,17 Mar 2013,3347
+8.0,0,43,0,5.37,-,-,,v South Africa,Durban,21 Mar 2013,3348
+6.0,0,28,0,4.66,-,-,,v South Africa,Benoni,24 Mar 2013,3350
+9.0,3,12,7,1.33,1.71,7.7,,v West Indies,Providence,14 Jul 2013,3389
+10.0,0,29,2,2.90,14.50,30.0,,v West Indies,Providence,16 Jul 2013,3390
+4.0,0,23,0,5.75,-,-,,v West Indies,Gros Islet,19 Jul 2013,3391
+6.0,0,41,1,6.83,41.00,36.0,,v West Indies,Gros Islet,21 Jul 2013,3393
+5.0,0,30,0,6.00,-,-,,v West Indies,Gros Islet,24 Jul 2013,3396
+9.0,0,51,0,5.66,-,-,,v Zimbabwe,Harare,27 Aug 2013,3404
+5.0,0,32,0,6.40,-,-,,v Zimbabwe,Harare,29 Aug 2013,3406
+6.0,1,29,1,4.83,29.00,36.0,,v Zimbabwe,Harare,31 Aug 2013,3408
+9.0,1,37,3,4.11,12.33,18.0,,v South Africa,Sharjah,30 Oct 2013,3425
+5.4,0,26,3,4.58,8.66,11.3,,v South Africa,Dubai (DSC),1 Nov 2013,3427
+10.0,0,41,2,4.10,20.50,30.0,,v South Africa,Abu Dhabi,6 Nov 2013,3430
+8.0,0,38,0,4.75,-,-,,v South Africa,Abu Dhabi,8 Nov 2013,3431
+10.0,0,37,0,3.70,-,-,,v South Africa,Sharjah,11 Nov 2013,3433
+7.0,0,34,1,4.85,34.00,42.0,,v South Africa,Cape Town,24 Nov 2013,3438
+9.0,0,38,2,4.22,19.00,27.0,,v South Africa,Port Elizabeth,27 Nov 2013,3440
+7.0,0,30,2,4.28,15.00,21.0,,v Sri Lanka,Sharjah,18 Dec 2013,3445
+5.4,0,46,2,8.11,23.00,17.0,,v Sri Lanka,Dubai (DSC),20 Dec 2013,3446
+9.0,0,41,1,4.55,41.00,54.0,,v Sri Lanka,Sharjah,22 Dec 2013,3447
+7.0,0,37,0,5.28,-,-,,v Sri Lanka,Abu Dhabi,25 Dec 2013,3448
+10.0,0,56,2,5.60,28.00,30.0,,v Sri Lanka,Fatullah,25 Feb 2014,3473
+10.0,0,31,1,3.10,31.00,60.0,,v Afghanistan,Fatullah,27 Feb 2014,3475
+8.0,0,38,0,4.75,-,-,,v India,Dhaka,2 Mar 2014,3479
+10.0,0,64,0,6.40,-,-,,v Bangladesh,Dhaka,4 Mar 2014,3482
+6.0,0,35,0,5.83,-,-,,v Sri Lanka,Dhaka,8 Mar 2014,3486
+9.0,0,57,0,6.33,-,-,,v Sri Lanka,Hambantota,23 Aug 2014,3512
+10.0,0,51,0,5.10,-,-,,v Sri Lanka,Hambantota,26 Aug 2014,3515
+1.2,0,8,0,6.00,-,-,,v Sri Lanka,Dambulla,30 Aug 2014,3519
+10.0,0,46,3,4.60,15.33,20.0,,v Australia,Sharjah,7 Oct 2014,3530
+10.0,0,36,0,3.60,-,-,,v Australia,Dubai (DSC),10 Oct 2014,3532
+10.0,1,44,2,4.40,22.00,30.0,,v Australia,Abu Dhabi,12 Oct 2014,3534
+10.0,1,36,1,3.60,36.00,60.0,,v New Zealand,Dubai (DSC),8 Dec 2014,3564
+10.0,0,47,2,4.70,23.50,30.0,,v New Zealand,Sharjah,12 Dec 2014,3566
+9.2,0,37,3,3.96,12.33,18.6,,v New Zealand,Sharjah,14 Dec 2014,3568
+10.0,0,46,1,4.60,46.00,60.0,,v New Zealand,Abu Dhabi,17 Dec 2014,3570
+10.0,0,33,1,3.30,33.00,60.0,,v New Zealand,Abu Dhabi,19 Dec 2014,3571
+10.0,0,39,1,3.90,39.00,60.0,,v New Zealand,Wellington,31 Jan 2015,3596
+10.0,0,57,1,5.70,57.00,60.0,,v New Zealand,Napier,3 Feb 2015,3598
+8.0,0,50,0,6.25,-,-,,v India,Adelaide,15 Feb 2015,3602
+10.0,0,48,0,4.80,-,-,,v West Indies,Christchurch,21 Feb 2015,3608
+10.0,1,53,0,5.30,-,-,,v Zimbabwe,Brisbane,1 Mar 2015,3620
+10.0,1,35,2,3.50,17.50,30.0,,v U.A.E.,Napier,4 Mar 2015,3622
+5.0,0,28,0,5.60,-,-,,v South Africa,Auckland,7 Mar 2015,3626
+10.0,0,38,0,3.80,-,-,,v Ireland,Adelaide,15 Mar 2015,3639
+4.0,0,30,0,7.50,-,-,,v Australia,Adelaide,20 Mar 2015,3642
