@@ -41,13 +41,22 @@
 				arr[i] = arr[i].replace("\"","");
 				arr[i] = arr[i].replace("[","");
 				arr[i] = arr[i].replace("]","");
-				document.getElementById('s').options[i] = new Option(arr[i],i+1);
+				document.getElementById('names').options[i] = new Option(arr[i],arr[i]);
 				// console.log(arr[i]);
 			}
 		}
 	}
 	
-
+	function plot()
+	{
+	
+	url="http://127.0.0.1:9191/"+document.getElementById("typeofplot").value
+	url=url+"?name="+document.getElementById("names").value+"&format=T20I";
+	
+	//alert(url)
+	
+	document.getElementById("plot1").src=url;	
+	}
 	
 </script>
 </head>
@@ -58,13 +67,27 @@
 
 <div>
 	<form id="f">
-		<select id="s">
-		</select>
+	
+	T20I<input type="radio" name="format" value="T20I" >
+	
+	ODI<input type="radio" name="format" value="ODI">
+	
+	Test<input type="radio" name="format" value="Test">
+	<br>
+	<select id="names">
+		</select><br>
+	<select id="typeofplot" size=12 onchange=plot()>
+	
+		<option value=StrikeRateVsGround  >Strike Rate Vs Ground</option>
+<option value=StrikeRateVsGround>Strike Rate Vs Ground</option>
+	</select>
+				
+		
 	</form>
 </div>
+ 
 
-
-		<img id="plot1" src="http://127.0.0.1:9191/plotex" >
+		<img id="plot1"  >
 	
 	
 	

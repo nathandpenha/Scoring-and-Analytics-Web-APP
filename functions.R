@@ -28,12 +28,19 @@ addTwo <- function(a, b){
     as.numeric(a) + as.numeric(b)
 } 
 
+
 #* @get /plotex
-#* @png(width=100,400)
-plot1 <- function(){
-  plot(10,20)
+#* @png(width=400,400)
+plot1 <- function(name,format){
+  D<-read.csv(paste("data/",name,"_",format,"_Batting.csv",sep = ""))
+  plot(D$Ground,D$SR)
 } 
 
-
+#* @get /StrikeRateVsGround
+#* @png(width=400,400)
+StrikeRateVsGround <- function(name,format){
+  D<-read.csv(paste("data/",name,"_",format,"_Batting.csv",sep = ""))
+  plot(D$Ground,D$SR)
+} 
 
 
