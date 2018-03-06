@@ -47,24 +47,7 @@
 		}
 	}
 	
-	function plot()
-	{
-	
-	if(xhr)
-		{	url="http://127.0.0.1:9191/plotex";
-			xhr.open("GET",url);
-			xhr.onreadystatechange=function(){
-			
-			if(xhr.readyState==4&&xhr.status==200)
-		{
-			document.getElementById("plot1").src=xhr.responseText;
-		}
-			}
 
-			xhr.send(null);
-		}
-	
-	}
 	
 </script>
 </head>
@@ -80,10 +63,6 @@
 	</form>
 </div>
 
-<div>
-	<input type=button onclick="plot()">
-	
-</div>
 
 		<img id="plot1" src="http://127.0.0.1:9191/plotex" >
 	
