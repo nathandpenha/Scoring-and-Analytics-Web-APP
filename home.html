@@ -1,61 +1,59 @@
 <html>
 <head>
 <script type="text/javascript">
-
-xhr=false;
-
-if(window.XMLHttpRequest)
-{
-xhr=new XMLHttpRequest();
-}
-else if(window.ActiveXObject)
-{
-xhr=new ActiveXObject("Microsoft.XMLHTTP");
-}
-
-function getNames()
-{
-	if(xhr)
-	{	url="http://127.0.0.1:9191/name";
-		xhr.open("GET",url);
-		xhr.onreadystatechange=callback;
-		
-		xhr.send(null);
-	}
-
-
-
-}
-function callback()
-{
-	if(xhr.readyState==4&&xhr.status==200)
+	xhr=false;
+	if(window.XMLHttpRequest)
 	{
-		call(xhr.responseText);
+	xhr=new XMLHttpRequest();
 	}
-}
+	else if(window.ActiveXObject)
+	{
+	xhr=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+
+	function getNames()
+	{
+		if(xhr)
+		{	url="http://127.0.0.1:9191/name";
+			xhr.open("GET",url);
+			xhr.onreadystatechange=callback;
+
+			xhr.send(null);
+		}
+
+
+
+	}
+	function callback()
+	{
+		if(xhr.readyState==4&&xhr.status==200)
+		{
+			call(xhr.responseText);
+		}
+	}
 	function call() {
-    if ((xhr.readyState == 4) && (xhr.status == 200)){
-      var arr = (xhr.responseText.trim()).split(" ");
-		
-	for(i=0;i<arr.length;i++)
-	{
-	document.getElementById('s').options[i]=new Option(arr[i],i+1);
-	}		
+	    if ((xhr.readyState == 4) && (xhr.status == 200)){
+		      var arr = (xhr.responseText.trim()).split(",");
 
-    }	
+			for(i=0;i<arr.length;i++)
+			{
+				arr[i] = arr[i].replace("\"","");
+				arr[i] = arr[i].replace("\"","");
+				arr[i] = arr[i].replace("[","");
+				arr[i] = arr[i].replace("]","");
+				document.getElementById('s').options[i] = new Option(arr[i],i+1);
+				// console.log(arr[i]);
+			}
+		}
 	}
-
-
 </script>
 </head>
 
 <body onload=getNames()>
 <h1>R Is Very Powerful </h1>
 	<form id="f">
-		
 		<select id="s">
 		</select>
-		
 	</form>
 </body>
 </html>
