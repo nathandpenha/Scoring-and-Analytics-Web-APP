@@ -27,3 +27,13 @@ name<-function()
 addTwo <- function(a, b){
     as.numeric(a) + as.numeric(b)
 } 
+
+#* @get /plotex
+#* @png(width=100,400)
+plot1 <- function(){
+  plot(10,20)
+} 
+
+
+
+
