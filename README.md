@@ -1,4 +1,4 @@
-# Scoring-and-Analytics-Web-APP
+# Scoring and Analytics Web APP
 
 ---
 
