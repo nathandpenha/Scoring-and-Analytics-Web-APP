@@ -5,4 +5,4 @@
 ### Credits
 
 - T.V Ganesh
-- ESPN CricInfo Stats
+- ESPNCricinfo Statsguru
