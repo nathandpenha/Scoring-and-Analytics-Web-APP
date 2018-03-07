@@ -19,20 +19,20 @@ These comments allow plumber to make your R functions available as API endpoints
 
 > library(plumber)
 > r <- plumb("plumber.R")  # Where 'plumber.R' is the location of the file shown above
-> r$run(port=8000)
+> r$run(port=9191)
 You can visit this URL using a browser or a terminal to run your R function and get the results. Here we're using curl via a Mac/Linux terminal.
 
-$ curl "http://localhost:8000/mean"
+$ curl "http://localhost:9191/mean"
  [-0.254]
-$ curl "http://localhost:8000/mean?samples=10000"
+$ curl "http://localhost:9191/mean?samples=10000"
  [-0.0038]
 As you might have guessed, the request's query string parameters are forwarded to the R function as arguments (as character strings).
 
-$ curl --data "a=4&b=3" "http://localhost:8000/sum"
+$ curl --data "a=4&b=3" "http://localhost:9191/sum"
  [7]
 You can also send your data as JSON:
 
-$ curl --data '{"a":4, "b":5}' http://localhost:8000/sum
+$ curl --data '{"a":4, "b":5}' http://localhost:9191/sum
  [9]
 Installation
 You can install the latest stable version from CRAN using the following command:
