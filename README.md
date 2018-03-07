@@ -3,6 +3,4 @@
 ---
 
 ### Credits
-
-- T.V Ganesh
 - ESPNCricinfo Statsguru
