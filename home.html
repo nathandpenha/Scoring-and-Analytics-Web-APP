@@ -50,8 +50,17 @@
 	function plot()
 	{
 	
+	format="blank"
+	
+	
+	if(document.getElementById("c1").checked){	format="T20I"}
+	else if(document.getElementById("c2").checked){format="ODI"}
+	else if(document.getElementById("c3").checked){format="Test"}
+	
+	
+	
 	url="http://127.0.0.1:9191/"+document.getElementById("typeofplot").value
-	url=url+"?name="+document.getElementById("names").value+"&format=T20I";
+	url=url+"?name="+document.getElementById("names").value+"&format="+format;
 	
 	//alert(url)
 	
@@ -68,11 +77,11 @@
 <div>
 	<form id="f">
 	
-	T20I<input type="radio" name="format" value="T20I" >
+	T20I<input id=c1 type="radio" name="format" value="T20I" onclick=plot() >
 	
-	ODI<input type="radio" name="format" value="ODI">
+	ODI<input id=c2 type="radio" name="format" value="ODI" onclick=plot()>
 	
-	Test<input type="radio" name="format" value="Test">
+	Test<input id=c3 type="radio" name="format" value="Test" onclick=plot()>
 	<br>
 	<select id="names">
 		</select><br>
