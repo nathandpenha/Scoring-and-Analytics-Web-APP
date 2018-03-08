@@ -8,6 +8,7 @@ cors <-  function(res){
 library(dplyr)
 library(EDAWR)
 library(tidyr)
+library(scatterplot3d)
 library(lubridate)
 library(forecast)
 library(quadprog)
@@ -533,6 +534,96 @@ batsmanPerfBoxHist <- function(name,format) {
   mtext("Data source-Courtesy:ESPN Cricinfo", side=3, line=4, adj=1.0, cex=0.8, col="blue")
   # reset the layout
   par(mfrow=c(1,1))
+  
+}
+
+#* @get /battingPerfd
+#* @png(width=400,400)
+battingPerfd <- function(name,format) {
+  # Clean the batsman file and create a complete data frame
+  batsman <- clean(name,format)
+  # Make a 3 D plot and fit a regression plane
+  atitle <- paste(name, "- Runs  vs BF & Mins")
+  s <-with(data=batsman,scatterplot3d(BF,Mins,Runs, color=rgb(0,0,255,50,maxColorValue=255),
+                                      xlab="Balls Faced",ylab="Minutes in crease",
+                                      zlab="Runs scored", main=atitle,pch=16))
+  
+  # Fit a regression plabe
+  fit <- with(data=batsman,lm(Runs ~ BF+Mins))
+  
+  # Draw the plane
+  s$plane3d(fit)
+  
+  mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=4, adj=1.0, cex=0.8, col="blue")
+  
+  
+}
+
+#* @get /batsmanDismissals
+#* @png(width=400,400)
+batsmanDismissals <- function(name,format) {
+  
+  
+  batsman <- clean(name,format)
+  
+  lbls <- NULL
+  
+  d <- batsman$Dismissal
+  
+  # Convert to data frame
+  dismissal <- data.frame(table(d))
+  par(mar=c(0,0,2,2))
+  # Create a 3D pie chart
+  lbls <- dismissal$d
+  slices <- dismissal$Freq
+  pct <- round(slices/sum(slices)*100)
+  lbls <- paste(lbls, pct) # add percents to labels 
+  lbls <- paste(lbls,"%",sep="") # ad % to labels 
+  atitle <- paste(name, "-Pie chart of dismissals")
+  
+  # Important note: Ensure the number of labels & slices match
+  plotrix::pie3D(slices, labels=lbls,explode=0.1, main= atitle,pty="s",labelcex=0.8)
+  
+  mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=4, adj=1.0, cex=0.8, col="blue") 
+  
+}
+#* @get /batsmanScoringRateODTT
+#* @png(width=400,400)
+batsmanScoringRateODTT <- function(name,format) {
+  
+  # Clean the batsman file and create a complete data frame
+  batsman <- clean(name,format)
+  
+  atitle <- paste(name, "- Runs vs Balls Faced")
+  
+  # Make a scatter plot of balls faced and runs
+  with(data=batsman,plot(BF,Runs,main=atitle))
+  
+  # Fit a second order polynomial used
+  fit2 <- with(data=batsman,lm(Runs~poly(BF,2,raw=TRUE)))
+  
+  # Create seq from 0 to max batsman balls faced
+  xx <- seq(from=0,to = max(batsman$BF),by=5)
+  
+  # Compute the predicted runs
+  yy <- NULL
+  for (i in seq_along(xx)) {
+    yy[i] <- fit2$coefficients[3] * xx[i]^2 + fit2$coefficients[2] * xx[i] + fit2$coefficients[1] 
+    
+  }
+  # Draw the predicted runs
+  lines(xx,yy,col="blue",lwd=2.0)
+  bf=50
+  runs = fit2$coefficients[3] * bf^2 + fit2$coefficients[2] * bf + fit2$coefficients[1] 
+  abline(v=50,lty=2,lwd=2,col="blue")
+  abline(h=runs,lty=2,lwd=2,col="blue")
+  
+  bf=100
+  runs = fit2$coefficients[3] * bf^2 + fit2$coefficients[2] * bf + fit2$coefficients[1] 
+  abline(v=100,lty=3,lwd=2,col="red")
+  abline(h=runs,lty=3,lwd=2,col="red")
+  mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=4, adj=1.0, cex=0.8, col="blue")
+  
   
 }
 
