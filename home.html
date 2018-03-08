@@ -73,8 +73,6 @@
 <body onload=getNames()>
 
 <h1>R Is Very Powerful </h1>
-
-<div>
 	<form id="f">
 	
 	T20I<input id=c1 type="radio" name="format" value="T20I" onclick=plot() >
@@ -83,18 +81,20 @@
 	
 	Test<input id=c3 type="radio" name="format" value="Test" onclick=plot()>
 	<br>
-	<select id="names">
+	<select id="names" onchange=plot()>
 		</select><br>
 	<select id="typeofplot" size=12 onchange=plot()>
 	
 		<option value=batsmanAvgRunsGround  >Batsman Avg Runs Ground</option>
 <option value=batsmanAvgRunsOpposition>Batsman Avg Runs Opposition</option>
 	<option value=BoundariesVsSingles>Boundaries Vs Singles</option>
+<option value=batsmanPerfForecast>Batsman Perf Forecast</option>
 </select>
-				
+	
+
 		
 	</form>
-</div>
+
  
 
 		<img id="plot1"  >
