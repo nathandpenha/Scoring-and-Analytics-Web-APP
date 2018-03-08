@@ -5,7 +5,7 @@ cors <-  function(res){
     res$setHeader("Access-Control-Allow-Origin","*")
     plumber::forward()    
 }
-
+library(dplyr)
 #* @get /clean
 clean <- function(file) {
   
@@ -185,6 +185,6 @@ batsmanPerfForecast <- function( name,format) {
   accuracy(fcast,ts.test)
   
   
-  mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=4, adj=1.0, cex=0.8, col="blue")
+  #mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=4, adj=1.0, cex=0.8, col="blue")
 }
 
