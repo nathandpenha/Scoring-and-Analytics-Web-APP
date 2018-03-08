@@ -6,6 +6,13 @@ cors <-  function(res){
     plumber::forward()    
 }
 library(dplyr)
+library(EDAWR)
+library(tidyr)
+library(lubridate)
+library(forecast)
+library(quadprog)
+library(quantmod)
+library(magrittr)
 #* @get /clean
 clean <- function(file) {
   
@@ -135,11 +142,7 @@ BoundariesVsSingles<-function(name, format){
 batsmanPerfForecast <- function( name,format) {
   file<-paste("data/",name,"_",format,"_Batting.csv",sep = "")
   b <- clean(file)
-  library(lubridate)
-  library(forecast)
-  library(quadprog)
-  library(quantmod)
-  # Read day, month and year
+   # Read day, month and year
   date <- dmy(b$Start.Date)
   runs <- b$Runs
   
@@ -153,7 +156,7 @@ batsmanPerfForecast <- function( name,format) {
   startYear = year(date[1])
   endMonth = month(date[i])
   endYear = year(date[i])
-  
+
   # Create training set with the 90 percent career 
   ts.train <- ts(runs, start = c(startYear,startMonth), end = c(endYear,endMonth),frequency=12)
   
