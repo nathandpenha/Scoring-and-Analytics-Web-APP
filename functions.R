@@ -83,5 +83,23 @@ check<-function(file){
 D<-clean(file)
 D
 }
-
-
+#* @get /batsmanAvgRunsOpposition
+#* @png(width=400,400)
+batsmanAvgRunsOpposition <- function(name="A Latecut",format){
+  Opposition <-Runs <- NULL
+  file<-paste("data/",name,"_",format,"_Batting.csv",sep = "")
+  batsman <- clean(file)
+  # Use dplyr's summarise to group by Opposition and compute mean runs and count
+  meanRuns <- batsman %>% group_by(Opposition) %>% summarise(m= mean(Runs))
+  countInnings <- batsman %>% group_by(Opposition) %>% summarise(len=length(Runs))
+  # Set margins
+  par(mar=c(9,4,3,2))
+  opposition <- as.vector(meanRuns$Opposition)
+  values <- paste(opposition,"-",countInnings$len)
+  atitle <- paste(name,"'s Average Runs versus Opposition")
+  barplot(meanRuns$m,names=values,las=2,ylab="Average Runs", 
+          col=rainbow(length(meanRuns$m)),main=atitle)
+  abline(h=50,lty=2,lwd=2)
+  mtext("Opposition - No of innings", side=1, line=7.5, adj=1.0, cex=1.0, col="black")
+  mtext("Data source-Courtesy:ESPN Cricinfo", side=3, line=0, adj=1.0, cex=0.8, col="blue")
+}
