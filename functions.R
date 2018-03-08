@@ -69,8 +69,6 @@ StrikeRateVsGround <- function(name,format){
 } 
 
 
-
-
 #* @get /StrikeRateVsGround
 #* @png(width=400,400)
 StrikeRateVsGround <- function(name,format){
@@ -83,6 +81,7 @@ check<-function(file){
 D<-clean(file)
 D
 }
+<<<<<<< HEAD
 #* @get /batsmanAvgRunsOpposition
 #* @png(width=400,400)
 batsmanAvgRunsOpposition <- function(name="A Latecut",format){
@@ -103,3 +102,11 @@ batsmanAvgRunsOpposition <- function(name="A Latecut",format){
   mtext("Opposition - No of innings", side=1, line=7.5, adj=1.0, cex=1.0, col="black")
   mtext("Data source-Courtesy:ESPN Cricinfo", side=3, line=0, adj=1.0, cex=0.8, col="blue")
 }
+=======
+
+BoundariesVsSingles<-function(name, format){
+  D<-read.csv(paste("data/",name,"_",format,"_Batting.csv",sep = ""))
+  plot(batsman$Match.No, (batsman$Runs-(batsman$X4s*4 + batsman$X6s*6)))
+}
+
+>>>>>>> 0eb9e725718f376437b22a98938d98f5b896b424
