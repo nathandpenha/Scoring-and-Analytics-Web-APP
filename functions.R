@@ -69,8 +69,6 @@ StrikeRateVsGround <- function(name,format){
 } 
 
 
-
-
 #* @get /StrikeRateVsGround
 #* @png(width=400,400)
 StrikeRateVsGround <- function(name,format){
@@ -84,4 +82,8 @@ D<-clean(file)
 D
 }
 
+BoundariesVsSingles<-function(name, format){
+  D<-read.csv(paste("data/",name,"_",format,"_Batting.csv",sep = ""))
+  plot(batsman$Match.No, (batsman$Runs-(batsman$X4s*4 + batsman$X6s*6)))
+}
 
