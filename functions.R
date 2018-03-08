@@ -1,4 +1,4 @@
-# myfile.R
+# functions.R
 
 #' @filter cors
 cors <-  function(res){
@@ -64,24 +64,41 @@ plot1 <- function(name,format){
 #* @get /StrikeRateVsGround
 #* @png(width=400,400)
 StrikeRateVsGround <- function(name,format){
-  D<-read.csv(paste("data/",name,"_",format,"_Batting.csv",sep = ""))
+  file<-paste("data/",name,"_",format,"_Batting.csv",sep = "")
+  D <- clean(file)
   plot(D$Ground,D$SR)
 } 
 
-
-#* @get /StrikeRateVsGround
-#* @png(width=400,400)
-StrikeRateVsGround <- function(name,format){
-  D<-read.csv(paste("data/",name,"_",format,"_Batting.csv",sep = ""))
-  plot(D$Ground,D$SR)
-} 
 
 #* @get /check
 check<-function(file){
 D<-clean(file)
 D
 }
-<<<<<<< HEAD
+
+
+#* @get /batsmanAvgRunsGround
+#* @png(width=400,400)
+batsmanAvgRunsGround <- function( name="A Latecut",format){
+  file<-paste("data/",name,"_",format,"_Batting.csv",sep = "")
+  batsman <- clean(file)
+    # use dplyr's summarise function to group by Ground and calculate mean & count
+  meanRuns <- batsman %>% group_by(Ground) %>% summarise(m= mean(Runs))
+  countInnings <- batsman %>% group_by(Ground) %>% summarise(len=length(Runs))
+    # Set the margins
+  par(mar=c(9,4,3,2))
+  ground <- as.vector(meanRuns$Ground)
+  values <- paste(ground,"-",countInnings$len)
+  atitle <- paste(name,"'s Average Runs at Ground")
+  barplot(meanRuns$m,names=values,las=2,ylab="Average Runs", 
+          col=rainbow(length(meanRuns$m)),main=atitle,cex.names=0.8)
+  abline(h=50,lty=3,lwd=2)
+  abline(h=100,lty=3,lwd=2,col="blue")
+  mtext("Ground - No of innings", side=1, line=7.5, adj=1.0, cex=1.0, col="black")
+  mtext("Data source-Courtesy:ESPN Cricinfo", side=3, line=0, adj=1.0, cex=0.8, col="blue")
+}
+
+
 #* @get /batsmanAvgRunsOpposition
 #* @png(width=400,400)
 batsmanAvgRunsOpposition <- function(name="A Latecut",format){
@@ -102,11 +119,13 @@ batsmanAvgRunsOpposition <- function(name="A Latecut",format){
   mtext("Opposition - No of innings", side=1, line=7.5, adj=1.0, cex=1.0, col="black")
   mtext("Data source-Courtesy:ESPN Cricinfo", side=3, line=0, adj=1.0, cex=0.8, col="blue")
 }
-=======
 
+
+#* @get /BoundariesVsSingles
+#* @png(width=400,400)
 BoundariesVsSingles<-function(name, format){
-  D<-read.csv(paste("data/",name,"_",format,"_Batting.csv",sep = ""))
+  file<-paste("data/",name,"_",format,"_Batting.csv",sep = "")
+  D <- clean(file)
   plot(batsman$Match.No, (batsman$Runs-(batsman$X4s*4 + batsman$X6s*6)))
 }
 
->>>>>>> 0eb9e725718f376437b22a98938d98f5b896b424
