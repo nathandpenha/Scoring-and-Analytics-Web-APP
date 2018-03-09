@@ -1,5 +1,8 @@
 <html>
 <head>
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
 <script type="text/javascript">
 	xhr=false;
 	if(window.XMLHttpRequest)
@@ -46,52 +49,70 @@
 			}
 		}
 	}
-	
+
 	function plot()
 	{
-	
+
 	format="blank"
-	
-	
+
+
 	if(document.getElementById("c1").checked){	format="T20I"}
 	else if(document.getElementById("c2").checked){format="ODI"}
 	else if(document.getElementById("c3").checked){format="Test"}
-	
-	
-	
+
+
+
 	url="http://127.0.0.1:9191/"+document.getElementById("typeofplot").value
 	url=url+"?name="+document.getElementById("names").value+"&format="+format;
-	
+
 	//alert(url)
-	
-	document.getElementById("plot1").src=url;	
+
+	document.getElementById("plot1").src=url;
 	}
-	
+
 </script>
 </head>
 
 <body onload=getNames()>
-
-<h1>R Is Very Powerful </h1>
+	<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="#">R is very Powerful</a>
+	</div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+	  <ul class="nav navbar-nav">
+		<li><a href="#">Batsmen</a></li>
+		<li><a href="#">Bowlers</a></li>
+		<li><a href="#">Compare</a></li>
+	  </ul>
+	</div>
+	</div>
+	</nav>
+	<div class="container" style="margin-top:50px">
 	<form id="f">
-	
+
 	T20I<input id=c1 type="radio" name="format" value="T20I" onclick=plot() >
-	
+
 	ODI<input id=c2 type="radio" name="format" value="ODI" onclick=plot()>
-	
+
 	Test<input id=c3 type="radio" name="format" value="Test" onclick=plot()>
 	<br>
 	<select id="names" onchange=plot()>
 		</select><br>
 	<select id="typeofplot" size=12 onchange=plot()>
-	
+
 	<option value=batsmanfours  >Batsman 4s</option>
 
 <option value=batsmansixs  >Batsman 6s</option>
 	<option value=batsmanAvgRunsGround  >Batsman Avg Runs Ground</option>
 <option value=batsmanAvgRunsOpposition>Batsman Avg Runs Opposition</option>
 	<option value=BoundariesVsSingles>Boundaries Vs Singles</option>
-	
+
 	<option value=batsmanContributionWonLost  >Batsman Contribution Won Lost</option>
 	<option value=batsmanPerfForecast>Batsman Performance Forecast</option>
 	<option value=batsmanCumulativeAverageRuns>Batsman Cumulative Average Runs</option>
@@ -107,16 +128,16 @@
 
 
 </select>
-	 
 
-		
+
+
 	</form>
 
- 
+
 
 		<img id="plot1"  >
-	
-	
-	
+
+</div>
+
 </body>
 </html>
