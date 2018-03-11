@@ -2,8 +2,8 @@
 
 #' @filter cors
 cors <-  function(res){
-    res$setHeader("Access-Control-Allow-Origin","*")
-    plumber::forward()    
+  res$setHeader("Access-Control-Allow-Origin","*")
+  plumber::forward()    
 }
 library(dplyr)
 library(EDAWR)
@@ -45,8 +45,16 @@ clean <- function(name,format) {
 
 #* @get /mean
 normalMean <- function(samples=10){
-    data <- rnorm(samples)
-    mean(data)
+  data <- rnorm(samples)
+  mean(data)
+}
+
+#* @get /bowlingname
+bowlingname<-function()
+{
+  D<-read.csv("Data/BowlingNames.csv",sep = ",")
+  print(D$Names)
+  
 }
 
 #* @get /name
@@ -60,7 +68,7 @@ name<-function()
 
 #* @get /sum
 addTwo <- function(a, b){
-    as.numeric(a) + as.numeric(b)
+  as.numeric(a) + as.numeric(b)
 } 
 
 
@@ -81,20 +89,20 @@ StrikeRateVsGround <- function(name,format){
 
 #* @get /check
 check<-function(file){
-D<-clean(file)
-D
+  D<-clean(file)
+  D
 }
 
 
 #* @get /batsmanAvgRunsGround
 #* @png(width=400,400)
 batsmanAvgRunsGround <- function( name,format){
- 
+  
   batsman <- clean(name,format)
-    # use dplyr's summarise function to group by Ground and calculate mean & count
+  # use dplyr's summarise function to group by Ground and calculate mean & count
   meanRuns <- batsman %>% group_by(Ground) %>% summarise(m= mean(Runs))
   countInnings <- batsman %>% group_by(Ground) %>% summarise(len=length(Runs))
-    # Set the margins
+  # Set the margins
   par(mar=c(9,4,3,2))
   ground <- as.vector(meanRuns$Ground)
   values <- paste(ground,"-",countInnings$len)
@@ -141,7 +149,7 @@ BoundariesVsSingles<-function(name, format){
 #* @png(width=400,400)
 batsmanPerfForecast <- function( name,format) {
   b <- clean(name,format)
-   # Read day, month and year
+  # Read day, month and year
   date <- dmy(b$Start.Date)
   runs <- b$Runs
   
@@ -155,7 +163,7 @@ batsmanPerfForecast <- function( name,format) {
   startYear = year(date[1])
   endMonth = month(date[i])
   endYear = year(date[i])
-
+  
   # Create training set with the 90 percent career 
   ts.train <- ts(runs, start = c(startYear,startMonth), end = c(endYear,endMonth),frequency=12)
   
@@ -314,7 +322,7 @@ batsmanCumulativeAverageRuns <- function(name,format){
   c <- select(b,no,Runs)
   
   d <- mutate(c,cs=cumsum(Runs)/no)
- 
+  
   ggplot(d) + geom_line(aes(x=no,y=cs))
   plot.title= paste(name,"- Cumulative Average vs No of innings")
 }
@@ -325,19 +333,19 @@ batsmanCumulativeAverageRuns <- function(name,format){
 #* @png(width=400,400)
 batsmanMeanStrikeRate <- function(name,format){
   
-  batsman <- clean(name,format)
+  dataset <- clean(name,format)
   
   # Create a vector of runs with intervals of 15
-  maxi <- (max(batsman$Runs/15) + 1) *15
+  maxi <- (max(dataset$Runs/15) + 1) *15
   v <- seq(0,maxi,by=15)
-  a <- hist(batsman$Runs,breaks=v,plot=FALSE)
+  a <- hist(dataset$Runs,breaks=v,plot=FALSE)
   
   
   # Compute the Mean Strike Rate for each run range
   SR <- NULL
   for(i in 2:length(a$breaks))  {
-    b <- batsman$Runs > a$breaks[i-1] & batsman$Runs <= a$breaks[i] 
-    c <- batsman[b,]
+    b <- dataset$Runs > a$breaks[i-1] & dataset$Runs <= a$breaks[i] 
+    c <- dataset[b,]
     SR[i-1] <- mean(as.numeric(as.character(c$SR)))
   }
   
@@ -366,11 +374,11 @@ batsmanMeanStrikeRate <- function(name,format){
 #* @png(width=400,400)
 batsmanMovingAverage <- function(name,format) {
   # Compute the moving average of the time series
-  df <- clean(name,format) 
+  dataset <- clean(name,format) 
   
   #Subset runs and career dates
-  runs <- df$Runs
-  date <- dmy(df$Start.Date)
+  runs <- dataset$Runs
+  date <- dmy(dataset$Start.Date)
   
   timeframe <- data.frame(runs,date)
   
@@ -394,9 +402,9 @@ batsmanPerfHomeAway <- function(name,format) {
   
   
   ha <- NULL
-  playersp <- clean(name,format)
-  home <- filter(playersp,ha==1)
-  away <- filter(playersp,ha==2)
+  dataset <- clean(name,format)
+  home <- filter(dataset,ha==1)
+  away <- filter(dataset,ha==2)
   
   
   home$venue="Home"
@@ -428,10 +436,10 @@ batsmanPerfHomeAway <- function(name,format) {
 #* @png(width=400,400)
 batsmanRunsRanges <- function(name,format) {
   # Clean file
-  df <- clean(name,format)
+  dataset <- clean(name,format)
   
   # Divide the runs into 20 run ranges from 0 to 400
-  f <- cut(df$Runs, breaks=seq(from=0,to=400,by=20))
+  f <- cut(dataset$Runs, breaks=seq(from=0,to=400,by=20))
   
   # Create a table
   g <- table(f)
@@ -460,19 +468,15 @@ batsmanRunsRanges <- function(name,format) {
 #* @png(width=400,400)
 batsmanRunsFreqPerf <- function(name,format) {
   
-  df <- clean(name,format)
-  
+  dataset <- clean(name,format)
   # Create breaks in intervals of 10
-  maxi <- (max(df$Runs/10) + 1) *10
+  maxi <- (max(dataset$Runs/10) + 1) *10
   v <- seq(0,maxi,by=10)
-  a <- hist(df$Runs,breaks=v,plot=FALSE)
-  
+  a <- hist(dataset$Runs,breaks=v,plot=FALSE)
   # Create mid points
   Runs <- a$mids
   RunFrequency <- a$counts
   df1 <- data.frame(Runs,RunFrequency)
-  
-  
   # Create a plot
   atitle <- paste(name,"'s", " Runs frequency vs Runs")
   plot(df1$Runs,df1$RunFrequency,pch=16,xlab="Runs",ylab="Runs Frequency", main=atitle)
@@ -486,53 +490,32 @@ batsmanRunsFreqPerf <- function(name,format) {
 #* @png(width=400,400)
 batsmanPerfBoxHist <- function(name,format) {
   
-  df <- clean(name,format)
+  dataset <- clean(name,format)
   atitle <- paste(name,"'s", " - Runs Frequency vs Runs")
-  
-  # Set the layout and the margins. 
   nf <- layout(mat = matrix(c(1,2),2,1, byrow=TRUE),  heights = c(1,3))
   par(mar=c(2,2,1,1))
-  
-  # Draw the boxplot
-  boxplot(df$Runs, horizontal=TRUE,  outline=TRUE,ylim=c(0,max(df$Runs)), 
+  boxplot(dataset$Runs, horizontal=TRUE,  outline=TRUE,ylim=c(0,max(dataset$Runs)), 
           frame=F, col = "green1")
-  
-  # Draw lines showing the mean and meadian
-  abline(v=median(df$Runs),col="blue",lwd=3.0)
-  abline(v=mean(df$Runs),col="red",lwd=3.0)
+  # Drawing mean and meadian
+  abline(v=median(dataset$Runs),col="blue",lwd=3.0)
+  abline(v=mean(dataset$Runs),col="red",lwd=3.0)
   mtext("Data source-Courtesy:ESPN Cricinfo", side=3, line=4, adj=1.0, cex=0.8, col="blue")
-  
-  # Create a vector from 0 with intervals of 10 for the intervals
-  maxi <- (max(df$Runs/10) + 1) *10
+  maxi <- (max(dataset$Runs/10) + 1) *10
   v <- seq(0,maxi,by=10)
-  
-  
-  # Draw a histogram
-  hist(df$Runs,breaks=v,xlab="Runs",ylab="Runs frequency", 
+  hist(dataset$Runs,breaks=v,xlab="Runs",ylab="Runs frequency", 
        main = atitle,labels=TRUE,col="grey")
-  
-  # Draw the median, mean, 1st and 3rd quantiles
-  abline(v=median(df$Runs),col="blue",lwd=3.0)
-  abline(v=mean(df$Runs),col="red",lwd=3.0)
-  abline(v=quantile(df$Runs,.25),col="black",lwd=3.0,lty=2)
-  abline(v=quantile(df$Runs,.75),col="black",lwd=3.0,lty=2)
-  
-  # Draw a rug below the histogram
-  rug(df$Runs,col="blue",lwd=2)
-  
-  mn <- paste("Mean runs over career:",round(mean(df$Runs),2))
-  md <- paste("Median runs over career:", round(median(df$Runs),2))
-  
-  # Get the value of count to determine the height of graph
-  a <- hist(df$Runs, breaks=v,plot=FALSE)
+  abline(v=median(dataset$Runs),col="blue",lwd=3.0)
+  abline(v=mean(dataset$Runs),col="red",lwd=3.0)
+  abline(v=quantile(dataset$Runs,.25),col="black",lwd=3.0,lty=2)
+  abline(v=quantile(dataset$Runs,.75),col="black",lwd=3.0,lty=2)
+  rug(dataset$Runs,col="blue",lwd=2)
+  mn <- paste("Mean runs over career:",round(mean(dataset$Runs),2))
+  md <- paste("Median runs over career:", round(median(dataset$Runs),2))
+  a <- hist(dataset$Runs, breaks=v,plot=FALSE)
   ht <- max(a$counts)
-  
   text(200,ht-15,mn,col="brown")
   text(200,ht-20,md,col="brown")
-  
-  
   mtext("Data source-Courtesy:ESPN Cricinfo", side=3, line=4, adj=1.0, cex=0.8, col="blue")
-  # reset the layout
   par(mfrow=c(1,1))
   
 }
@@ -547,13 +530,10 @@ battingPerfd <- function(name,format) {
   s <-with(data=batsman,scatterplot3d(BF,Mins,Runs, color=rgb(0,0,255,50,maxColorValue=255),
                                       xlab="Balls Faced",ylab="Minutes in crease",
                                       zlab="Runs scored", main=atitle,pch=16))
-  
-  # Fit a regression plabe
+  # make a regression plabe
   fit <- with(data=batsman,lm(Runs ~ BF+Mins))
-  
   # Draw the plane
   s$plane3d(fit)
-  
   mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=4, adj=1.0, cex=0.8, col="blue")
   
   
@@ -564,49 +544,35 @@ battingPerfd <- function(name,format) {
 batsmanDismissals <- function(name,format) {
   
   
-  batsman <- clean(name,format)
-  
+  dataset <- clean(name,format)
   lbls <- NULL
-  
-  d <- batsman$Dismissal
-  
-  # Convert to data frame
+  d <- dataset$Dismissal
   dismissal <- data.frame(table(d))
   par(mar=c(0,0,2,2))
-  # Create a 3D pie chart
+  # Generate a 3D pie chart
   lbls <- dismissal$d
   slices <- dismissal$Freq
   pct <- round(slices/sum(slices)*100)
   lbls <- paste(lbls, pct) # add percents to labels 
   lbls <- paste(lbls,"%",sep="") # ad % to labels 
   atitle <- paste(name, "-Pie chart of dismissals")
-  
-  # Important note: Ensure the number of labels & slices match
+  #we have to Ensure the number of labels & slices match
   plotrix::pie3D(slices, labels=lbls,explode=0.1, main= atitle,pty="s",labelcex=0.8)
-  
   mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=4, adj=1.0, cex=0.8, col="blue") 
   
 }
 #* @get /batsmanScoringRateODTT
 #* @png(width=400,400)
 batsmanScoringRateODTT <- function(name,format) {
-  
-  # Clean the batsman file and create a complete data frame
-  batsman <- clean(name,format)
+  dataset <- clean(name,format)
   
   atitle <- paste(name, "- Runs vs Balls Faced")
-  
-  # Make a scatter plot of balls faced and runs
-  with(data=batsman,plot(BF,Runs,main=atitle))
-  
-  # Fit a second order polynomial used
-  fit2 <- with(data=batsman,lm(Runs~poly(BF,2,raw=TRUE)))
-  
-  # Create seq from 0 to max batsman balls faced
-  xx <- seq(from=0,to = max(batsman$BF),by=5)
-  
-  # Compute the predicted runs
+  with(data=dataset,plot(BF,Runs,main=atitle))
+  fit2 <- with(data=dataset,lm(Runs~poly(BF,2,raw=TRUE)))
+  xx <- seq(from=0,to = max(dataset$BF),by=5)
+  # generate the predicted runs
   yy <- NULL
+  #running for loop
   for (i in seq_along(xx)) {
     yy[i] <- fit2$coefficients[3] * xx[i]^2 + fit2$coefficients[2] * xx[i] + fit2$coefficients[1] 
     
@@ -617,13 +583,75 @@ batsmanScoringRateODTT <- function(name,format) {
   runs = fit2$coefficients[3] * bf^2 + fit2$coefficients[2] * bf + fit2$coefficients[1] 
   abline(v=50,lty=2,lwd=2,col="blue")
   abline(h=runs,lty=2,lwd=2,col="blue")
-  
   bf=100
   runs = fit2$coefficients[3] * bf^2 + fit2$coefficients[2] * bf + fit2$coefficients[1] 
   abline(v=100,lty=3,lwd=2,col="red")
   abline(h=runs,lty=3,lwd=2,col="red")
   mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=4, adj=1.0, cex=0.8, col="blue")
   
-  
 }
+
+
+cleanBowlerData <- function(name,format) {
+  
+  BPO <- Overs <- NULL
+  # Read the <bowler>.csv file
+  file<-paste("data/",name,"_",format,"_Bowling.csv",sep = "")
+  
+  df <- read.csv(file,stringsAsFactor=FALSE,na.strings=c(NA,"-"))
+  
+  # Remove rows with did not bowl
+  a <- df$Overs != "DNB"
+  bowler <- df[a,]
+  
+  # Remove rows with 'TDNB' - team did not bowl
+  c <- bowler$Overs != "TDNB"
+  bowler <- bowler[c,]
+  
+  # Get all complete cases
+  c <- complete.cases(bowler)
+  bowlerComplete <- bowler[c,]
+  
+  # Normalize overs which had 8 balls per over to the number of overs if there 8 balls per over
+  if(names(bowlerComplete)[3] == "BPO") {
+    bowlerComplete <- mutate(bowlerComplete, Overs = ifelse(BPO==8,as.numeric(Overs)*8/6,Overs))   
+  }
+  
+  #Return the data frame 
+  bowlerComplete
+}
+
+
+#* @get /bowlerHistWickets
+#* @png(width=400,400)
+bowlerHistWickets <- function(name,format) {
+  bowler <- cleanBowlerData(name,format);
+  
+  # Create a table of wickets
+  wktsTable <- table(bowler$Wkts)
+  
+  #Convert to dataframe for easy processing
+  wktsDF <- as.data.frame(wktsTable)
+  
+  #Remove column with "-"
+  wktsDF <- wktsDF[2:nrow(wktsDF),]
+  
+  #Rename columns
+  colnames(wktsDF) <- c("Wickets","Freq")
+  
+  #Calculate wickets percentage
+  wktsDF$freqPercent <- (wktsDF$Freq/sum(wktsDF$Freq)) * 100
+  
+  # Ensure ascending order of wickets
+  wktsDF <- wktsDF[order(as.numeric(as.character(wktsDF$Wickets))),]
+  #wktsDF
+  atitle <- paste(name,"'s", " - Wkts percentage (%) vs Wkts")
+  plot(as.numeric(as.character(wktsDF$Wickets)), wktsDF$freqPercent, type="o", xlab="Wickets", ylab = "Wicket percentages (%)",
+       main = atitle, ylim=c(0,50),pch=15, col="blue",lwd="2")
+  
+  mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=4, adj=1.0, cex=0.8, col="blue")
+}
+
+
+
 
