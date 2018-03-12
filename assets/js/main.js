@@ -48,6 +48,10 @@ function plot() {
     } else if (document.getElementById("c3").checked) {
         format = "Test";
     }
+	else{
+		
+		format = "T20I";
+	}
 
     url = "http://127.0.0.1:9191/" + document.getElementById("typeofplot").value
     url = url + "?name=" + document.getElementById("names").value + "&format=" + format;
