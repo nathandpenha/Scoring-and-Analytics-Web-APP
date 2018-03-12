@@ -1,0 +1,47 @@
+html {
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+.styled-select {
+   overflow: auto;
+}
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 16px;
+   width: 100%;
+   height: 400px;
+}
+.semi-square {
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+}
+
+.blue {
+    background-color: #3b8ec2;
+    margin-top: 20px;
+}
+
+.blue select {
+    color: #fff;
+    margin: 10px;
+}
+
+#names {
+    width: 100%;
+    margin-top: 15px;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    margin: 4px !important;
+}
+
+.home #home a, .compare #compare a{
+    color:red;
+}
